@@ -1,0 +1,21 @@
+logging:
+    pattern:
+        console: '"%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"'
+server:
+    port: 8092
+spring:
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        password: Br1tney$2=
+        url: jdbc:mysql://127.0.0.1:3306/server_custom?serverTimezone=UTC
+        username: root
+    jpa:
+        database-platform: org.hibernate.dialect.MySQLDialect
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                format_sql: true
+                show_sql: true
+                use_sql_comments: false
+        show-sql: true
